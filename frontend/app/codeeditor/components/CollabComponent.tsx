@@ -39,7 +39,7 @@ const CollaborationDrawer: React.FC = () => {
   // Initialize session on first render
   React.useEffect(() => {
     if (!sessionId || !sessionLink) generateSessionDetails();
-  }, []);
+  }, [sessionId, sessionLink]);
 
   // Copy session link to clipboard
   const copyLink = () => {
